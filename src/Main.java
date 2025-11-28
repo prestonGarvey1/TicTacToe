@@ -34,7 +34,7 @@ public class Main {
                     if (isValidMove(p1row - 1, p1col - 1)) {
                         player1Valid = true;
                     } else {
-                        System.out.println("Error - Invalid move.");
+                        System.out.println("Invalid move, please try again.");
                     }
                 }
 
@@ -78,6 +78,7 @@ public class Main {
         scan.nextLine();
         gameOver = InputHelper.getYNConfirm(scan, "Play another game? [Y/N]");
     }
+// Game specific methods are placed here that rely on the use of local values
 
     public static void displayBoard() {
         for (int i = 0; i < rows; i++) {
